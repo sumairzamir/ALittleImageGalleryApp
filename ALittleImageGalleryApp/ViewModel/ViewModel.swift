@@ -17,7 +17,7 @@ class ViewModel {
         static let base = "https://www.flickr.com/services/rest/?method="
         static let search = "flickr.photos.search"
         static let getSizes = "flickr.photos.getSizes"
-        static let apiKey = "f9cc014fa76b098f9e82f1c288379ea1"
+        static let apiKey = "xxx"
         static let format = "&format=json&nojsoncallback=1"
         
         case searchPhotos(String)
