@@ -65,7 +65,6 @@ extension ViewController {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
         let photoData = viewModel.photoDataArray[indexPath.row]
-        cell.cellImageView.image = nil
         appendImageDataToCell(photoData: photoData, cell: cell)
         return cell
     }

@@ -21,6 +21,10 @@ class CollectionViewCell: UICollectionViewCell {
         
     let cellImageView = UIImageView()
     
+    override func prepareForReuse() {
+        cellImageView.image = nil
+    }
+    
     func configureCell() {
         addSubview(cellImageView)
         cellImageView.translatesAutoresizingMaskIntoConstraints = false
